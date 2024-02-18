@@ -8,7 +8,7 @@ async function main() {
   console.log(`Current price of ${symbol} is ${marketData.price}`);
 
   // Example trading logic
-  if (marketData.price < 50) {
+  if (marketData.price < 100) {
     const tradeResult = await executeTrade({
       symbol: symbol,
       quantity: 10,
