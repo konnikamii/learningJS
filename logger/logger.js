@@ -30,3 +30,4 @@ logger.info("This is an informational message");
 logger.error("This is an error message");
 logger.warn("This is a warning message");
 logger.debug("This is a debug message");
+logger.debug("This is a debug message looooog");
