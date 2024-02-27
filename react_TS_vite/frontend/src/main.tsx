@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import "./index.css";
 import {
   BrowserRouter,
   Route,
@@ -9,12 +8,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { AuthProvider } from "./context/AuthProvider.tsx";
-import HeroPage from "./components/HeroPage.tsx";
-import AboutPage from "./components/AboutPage.tsx";
-import NotFoundPage from "./components/NotFoundPage.tsx";
-import FeaturesPage from "./components/FeaturesPage.tsx";
-import PricingPage from "./components/PricingPage.tsx";
 
 // ReactDOM.createRoot(document.getElementById('root')!).render(
 //   <React.StrictMode>
