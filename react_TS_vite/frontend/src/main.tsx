@@ -15,25 +15,7 @@ import {
 //   </React.StrictMode>,
 // )
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HeroPage />,
-    errorElement: <NotFoundPage />,
-  },
-  {
-    path: "/about",
-    element: <AboutPage />,
-  },
-  {
-    path: "/features",
-    element: <FeaturesPage />,
-  },
-  {
-    path: "/pricing",
-    element: <PricingPage />,
-  },
-]);
+const router = createBrowserRouter([]);
 
 const rootElement = document.getElementById("root");
 if (rootElement) {
