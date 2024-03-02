@@ -1,6 +1,8 @@
 import fs from "node:fs/promises";
 import express from "express";
 
+import { resolve } from "path";
+import { PassThrough } from "node:stream";
 // Constants
 const isProduction = process.env.NODE_ENV === "production";
 const port = process.env.PORT || 5173;
@@ -34,6 +36,10 @@ if (!isProduction) {
   app.use(base, sirv("./dist/client", { extensions: [] }));
 }
 
+app.use(
+  "/about",
+  express.static(resolve("D:/Node-Code/multi_page_vite/ssr/dist/client/about"))
+);
 // Serve HTML
 app.use("*", async (req, res) => {
   if (req.originalUrl === base || req.originalUrl === `${base}/`) {
@@ -66,10 +72,9 @@ app.use("*", async (req, res) => {
       res.status(500).end(e.stack);
     }
   } else {
-    next();
+    return "";
   }
 });
-app.use("/about", express.static(resolve(__dirname, "/about/index.html")));
 
 // Start http server
 app.listen(port, () => {
