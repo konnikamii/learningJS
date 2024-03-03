@@ -14,8 +14,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        home: resolve(__dirname, "index.html"),
-        home2: resolve(__dirname, "index2.html"),
+        home: resolve(__dirname, "src/index.html"),
+        about: resolve(__dirname, "src/about.html"),
+        pricing: resolve(__dirname, "src/pricing.html"),
         //login: resolve(__dirname, "src/login/index.html"),
       },
     },
