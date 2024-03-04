@@ -9,14 +9,15 @@ console.log(resolve(__dirname, "src/login/index.html"));
 export default defineConfig({
   server: {
     port: 3000,
+    strictPort: true,
   },
   plugins: [react(), TanStackRouterVite()],
   build: {
     rollupOptions: {
       input: {
-        home: resolve(__dirname, "src/index.html"),
-        about: resolve(__dirname, "src/about.html"),
-        pricing: resolve(__dirname, "src/pricing.html"),
+        home: resolve(__dirname, "src/htmls/index.html"),
+        about: resolve(__dirname, "src/htmls/about.html"),
+        pricing: resolve(__dirname, "src/htmls/pricing.html"),
         //login: resolve(__dirname, "src/login/index.html"),
       },
     },
