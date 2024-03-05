@@ -7,7 +7,7 @@ export default function Home() {
       <Link href="/about" className="m-2 p-2 rounded-full bg-slate-500">
         About
       </Link>
-      <Link href="/dashboard" className="m-2 p-2 rounded-full bg-slate-500">
+      <Link href="/dashboard" className="m-2 p-2 rounded-full bg-slate-700">
         Dashboard
       </Link>
       <Link href="/users" className="m-2 p-2 rounded-full bg-slate-500">

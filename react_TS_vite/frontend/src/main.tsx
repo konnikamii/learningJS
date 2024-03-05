@@ -20,7 +20,7 @@ if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
     <StrictMode>
       {/* <RouterProvider router={router} /> */}
-      <h1>I am at home</h1>
+      <h1 className="bg-slate-300">I am at home</h1>
     </StrictMode>
   );
 } else {

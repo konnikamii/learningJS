@@ -3,13 +3,13 @@ import react from "@vitejs/plugin-react-swc";
 import { resolve } from "path";
 import { TanStackRouterVite } from "@tanstack/router-vite-plugin";
 
-console.log(__dirname);
-console.log(resolve(__dirname, "index.html"));
-console.log(resolve(__dirname, "src/login/index.html"));
 export default defineConfig({
   server: {
     port: 3000,
     strictPort: true,
+    // proxy: {
+    //   "/": "http://localhost:8080",
+    // },
   },
   plugins: [react(), TanStackRouterVite()],
   build: {
@@ -22,4 +22,5 @@ export default defineConfig({
       },
     },
   },
+  //root: resolve(__dirname, "src/htmls"),
 });
