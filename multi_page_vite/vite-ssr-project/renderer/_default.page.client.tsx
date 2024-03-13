@@ -61,6 +61,7 @@ function onPageTransitionStart(pageContext: PageContextClient) {
 
 function onPageTransitionEnd(pageContext: PageContextClient) {
   console.log("Page transition end");
+  console.log(pageContext);
   // For example:
   document.body.classList.remove("page-transition");
 }

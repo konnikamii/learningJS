@@ -6,7 +6,7 @@ function Page() {
   return (
     <>
       <h1>Welcome</h1>
-      This page is:
+      This page isssss:
       <ul>
         <li>Rendered to HTML.</li>
         <li>

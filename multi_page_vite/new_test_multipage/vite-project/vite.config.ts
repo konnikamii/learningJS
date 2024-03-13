@@ -18,7 +18,7 @@ export default defineConfig({
         home: resolve(__dirname, "src/htmls/index.html"),
         about: resolve(__dirname, "src/htmls/about.html"),
         pricing: resolve(__dirname, "src/htmls/pricing.html"),
-        //login: resolve(__dirname, "src/login/index.html"),
+        app: resolve(__dirname, "src/htmls/app.html"),
       },
     },
   },
